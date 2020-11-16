@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>BOYCOTT FRANCE</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>
+  
+
+    <div class="background">
+        <div class="nav">
+<a class="a active" href="#">HOME</a>
+<a class="b" href="#">ABOUT US</a>
+<a class="c" href="#">GALLERY</a>
+<a class="d" href="#">CONTACT US</a>
+
+        </div>
+
+     <div class="content">
+
+      <div class="home">
+          <h1>BOYCOTT FRANCE</h1>
+          <h3>BOYCOTT FRENCH PRODUCTS</h3>
+
+      </div>
+      <div class="aboutus">
+        <p>
+          In early October, the French President described Islam as a "religion in crisis," which prompted a backlash from Muslim activists across the world.
+          Post his comment, Macron announced presenting a bill in December to strengthen a 1905 law that separates the Church from the State.
+          A few weeks later, the beheading of a school teacher by an 18-year-old Islamist sympathiser kicked off a storm. The accused, allegedly beheaded the teacher, 
+          identified as Samuel Paty, for showing blasphemous caricatures of Prophet Muhammad in a Civics class on freedom of expression.
+          Islamic leaders called Macron's move a departure from distinguishing radical Islam from Islam and activists claimed that the French president was seen as
+           suppressing religious freedom of Muslims in France.
+         
+         <br></p>
+
+   </div>    
+          <div class="gallery">
+           <div class="image">
+             <img src="images/1.jpg"/>
+           </div>
+           <div class="image">
+            <img src="images/2.png"/>
+          </div><div class="image">
+            <img src="images/3.jpg"/>
+          </div><div class="image">
+            <img src="images/4.jpg"/>
+          </div><div class="image">
+            <img src="images/6.jpg"/>
+          </div><div class="image">
+            <img src="images/7.jpg"/>
+          </div><div class="image">
+            <img src="images/8.jpg"/>
+          </div>
+
+          </div>
+          <div class="contactus">
+            <div class="contactform">
+              <form action="" method="post">
+               <input type="text" name="" class="inputtext" value="First Name:">
+               <input type="text" name="" class="inputtext" value="Last Name:">
+               <input type="text" name="" class="inputtext" value="Your Email:">
+               <textarea cols="4" rows="6" class="inputmessage">Your Messages...!!!</textarea>
+               <input type="button" name="" class="submitbutton" value="submit">
+              </form>
+            </div>
+          </div>
+     </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+      $('a').click(function(){
+            //  alert("i am click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+      });
+        
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus');
+        $gallery = $('.gallery'),
+        $contactus = $('.contactus');
+
+        $a.click(function(){
+          $home.fadeIn();
+          $aboutus.fadeOut();
+          $gallery.fadeOut();
+          $contactus.fadeOut();
+        });
+        $b.click(function(){
+          $aboutus.fadeIn();
+          $home.fadeOut();
+          $gallery.fadeOut();
+          $contactus.fadeOut();
+        });
+        $c.click(function(){
+          $gallery.fadeIn();
+          $home.fadeOut();
+          $aboutus.fadeOut();
+          $contactus.fadeOut();
+        });
+        $d.click(function(){
+          $contactus.fadeIn();
+          $home.fadeOut();
+          $aboutus.fadeOut();
+          $gallery.fadeOut();
+          
+        });
+
+
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
